@@ -31,7 +31,7 @@
     font-size: 25px;
 
 }
-#scrollDownArrow
+.scrollDownArrow
 {
     position: absolute;
     top: 90%;
@@ -41,7 +41,8 @@
     text-align: center;
     animation: upDown 3s infinite;
 }
-#scrollDownArrow i:hover
+
+.scrollDownArrow i:hover
 {
     cursor: pointer;
 }

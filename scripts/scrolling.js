@@ -100,7 +100,7 @@ $(document).ready(function(e)
         $("#achievementsTronDays").click((e)=>jumpLeftRight(4,3));
         $("#achievementsOther").click((e)=>jumpLeftRight(4,4));
         $("#achievementsNews").click((e)=>jumpLeftRight(4,5));
-        $("#scrollDownArrow").click((e)=>{scrollDown(getPrevCurrNext()); postScroll()});
+        $(".scrollDownArrow").click((e)=>{scrollDown(getPrevCurrNext()); postScroll()});
         $('#sidebarHomeButton').click((e)=>sidebarButtonClicked(0));
         $('#sidebarWorkExperienceButton').click((e)=>sidebarButtonClicked(1));
         $('#sidebarProjectsButton').click((e)=>sidebarButtonClicked(2));
