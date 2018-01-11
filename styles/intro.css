@@ -98,7 +98,7 @@
 }
 #introPic
 {
-    background: white;
+    background-image: url('../images/my-pic.jpg');
     width:100%;
     height: 90%;
 }

@@ -97,7 +97,7 @@
 
 #achievements100Pic
 {
-    background: url("../images/achievements/100-percent.jpg");
+    background: url("../images/achievements/100-percent.JPG");
 }
 
 #achievementsTronDaysPic
@@ -187,12 +187,12 @@
 
 #aStLouis
 {
-    background-image: url("../images/achievements/st-louis.jpg");
+    background-image: url("../images/achievements/st-louis.JPG");
 }
 
 #aCertificate
 {
-    background-image: url("../images/achievements/transcendence-certificate.jpg");
+    background-image: url("../images/achievements/transcendence-certificate.JPG");
 }
 #aConference
 {
@@ -208,18 +208,18 @@
 
 #aPdsb
 {
-    background-image: url("../images/achievements/pdsb.jpg");
+    background-image: url("../images/achievements/pdsb.JPG");
     transform: translateY(40px);
 }
 
 #aBramptonGuardian
 {
-    background-image: url("../images/achievements/brampton-guardian.jpg");
+    background-image: url("../images/achievements/brampton-guardian.JPG");
     transform: translateY(130px);
 }
 #aTorontoStar
 {
-    background-image: url("../images/achievements/toronto-star.jpg");
+    background-image: url("../images/achievements/toronto-star.JPG");
     transform: translateY(40px);
 }
 #a100 .aHeadings
@@ -353,7 +353,7 @@
 #aMathletics
 {
     margin-left: 15%;
-    background-image: url("../images/achievements/mathletics.jpg");
+    background-image: url("../images/achievements/mathletics.JPG");
 }
 #aMathCompetitions
 {
@@ -446,7 +446,7 @@
 }
 #aNews3
 {
-    background-image: url("../images/achievements/minister-letter.jpg")
+    background-image: url("../images/achievements/minister-letter.JPG")
 }
 
 #aNews4

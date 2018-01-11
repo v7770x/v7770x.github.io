@@ -21,7 +21,6 @@ $(document).ready(function(ready)
     }
     for(let i = Math.floor(programmingLanguages.length/2); i<programmingLanguages.length; i++)
     {
-        console.log(i);
         $("#programmingRow2").append(
             '<div class="skillContainer" id="programming'+ programmingLanguages[i].replace(/\s/g,'') +'">\
                 <div class="body skillHeading">'+programmingLanguages[i] +'</div>\
