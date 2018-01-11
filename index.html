@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <!--Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href = "./styles/fonts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Styles -->
+        <!-- <link rel="stylesheet" type="text/css" href="styles/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href = "./styles/main.css">
+        <link rel = "stylesheet" type="text/css" href = "./styles/intro.css">
+        <link rel = "stylesheet" type = "text/css" href = "./styles/navbar.css">
+        <link rel="stylesheet" type = "text/css" href="./styles/work-exp.css">
+        <link rel="stylesheet" type = "text/css" href="./styles/projects.css">
+        <link rel="stylesheet" type = "text/css" href="./styles/skills.css">
+        <link rel="stylesheet" type = "text/css" href="./styles/achievements.css">
+        <link rel = "stylesheet" type = "text/css" href ="styles/tracker.css">
+        <link rel = "stylesheet" type = "text/css" href ="styles/left-right-bar.css">
+        <link rel="stylesheet" type="text/css" href="styles/education.css">
+        <link rel = "stylesheet" type = "text/css" href ="styles/contact-me.css">
+        <!--Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+        </script>
+        <script type = "text/javascript" src = "scripts/navbar.js"></script>
+        <script type = "text/javascript" src = "scripts/scrolling.js"></script>
+        <script type = "text/javascript" src = "scripts/app.js"></script>
+        <script type = "text/javascript" src = "scripts/projects.js"></script>
+        <script type = "text/javascript" src = "scripts/skills.js"></script>
+        <script type = "text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+
+    <body>
+
+        <nav id = "navbar">
+            <a id = "navClick">
+                <i class = "fa fa-bars" id="clickBar"></i>
+            </a>
+            <div id = "sidebarOuterContainer">
+                </div>
+            <div id="sidebarInnerContainer">
+                <div id="sidebar">
+                    <a id="sidebarHomeButton">Home</a>
+                    <a id="sidebarWorkExperienceButton">Work Experience</a>
+                    <a id="sidebarProjectsButton">Projects and Activities</a>
+                    <a id="sidebarSkillsButton">Skills</a>
+                    <a id="sidebarAchievementsButton">Achievements</a>
+                    <a id="sidebarEducationButton">Education</a>
+                    <div id="contact">
+                        <a href = "http://www.linkedin.com/in/vishvam-mazumdar" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        &nbsp&nbsp
+                        <a href = "http://www.github.com/v7770x"target="_blank"><i class="fa fa-github"></i></a>
+                        &nbsp&nbsp
+                        <a class="toContact"><i class="fa fa-envelope"></i> </a>
+                        &nbsp&nbsp
+                        <a class="toContact"><i class="fa fa-phone"></i></a>
+                    </div>
+                    <a id = "download-resume" href="documents/vishvam-mazumdar-resume.pdf"target="_blank">Download Resumé</a>
+                    
+                </div>    
+            </div>
+
+            <a href = "documents/vishvam-mazumdar-resume.pdf"target="_blank">
+                <div id = "logoContainer">
+                    <div id = "logoText">
+                        VM
+                    </div>
+                    <canvas id="logo" width="100" height="100" >
+                    </canvas>
+                    <canvas id="logo2" width="100" height="100" >
+                    </canvas> 
+                </div>
+            </a>
+        </nav>
+        <div id = "tracker">
+            <canvas id="trackerCircle" width="75" height = "75">
+            </canvas>
+        </div>
+        <div id = "leftRightBar">
+            <i id = "leftArrow" class="fa fa-chevron-left"></i>
+            <i id = "rightArrow" class="fa fa-chevron-right"></i>
+        </div>   
+        
+        <div id = "intro" class = "mainDiv active center">
+            <div id="introContent" class="column">
+                <div class="body" id="introHi">Hi there! I'm</div>
+                <div id = "introHeadingsContainer">
+                    <h1 class = "headings">
+                            Vishvam        
+                        </h1>
+                    <h1 class = "headings">
+                        Mazumdar        
+                    </h1>
+                </div>
+                <p class = "body">
+                    Welcome to my website! To learn more about me, go right.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="introExpand" class="mainDiv active right">
+            <div id="introExpandContent" class="row">
+                <div id="introPicContainer">
+                    <div class="body">This is me:</div>
+                    <div id="introPic"></div>
+                </div>
+
+                <div id="introParaContainer"class = "column">
+                    <div id = "introPara1" class= "body">
+                        I'm a 1B Mechatronics Engineering student at the University of Waterloo.
+                    </div>
+        
+                    <div id = "introPara2" class= "body">
+                        I love to code, I love to build, and, more than anything, I love to learn!
+                    </div>
+        
+                    <div id = "introPara3" class= "body">
+                        My website talks about who I am, what I've done, and what I can do. Enjoy scrolling through!
+                    </div>
+                </div>
+            </div>
+            <div id="scrollDownArrow"><i class="fa fa-chevron-down"></i></div>       
+        </div>
+
+        <div id="workExperience" class= "mainDiv below center">
+            <div id = "workExperienceHeadingContainer" class ="workExpUp transitionA">
+                <div class = "headings workExpBig transitionA" id="workExperienceHeading">
+                    Work Experience
+                </div> 
+            </div>
+            <div id = "workExpIntrosContainer">
+                <div id="cluepIntro" class="opacity0">
+                    <img src = "images/cluep-startup-image.jpg">
+                    <div class = 'body'>Junior Software Engineering Intern - Summer 2017</div>
+                </div>
+                <div id="kumonIntro" class="opacity0">
+                        <img src = "images/kumon-logo.jpg">
+                        <div class = 'body'>Tutor - <br> 12/2016 to 4/2017</div>
+                </div>
+            </div>
+            
+
+            <div id= "cluep" class = "mainDiv right">
+                <div id= "cluepHeading">
+                    <img src = "Images/cluep-logo.png">
+                </div>
+                <div id="cluepRolesContainer">
+                    <div id="cluepWebDesign">
+                        <h1 class = "headings"># Web design</h1>
+                        <ul class="body">
+                            <li>Programmed sister company's website alone (<a id="yaarLink"href="http://yaar.ai" target="_blank">yaar.ai</a>) 
+                                from top to bottom</li>
+                            <li>Customized and animated website with Javascript, jQuery, HTML, and CSS </li>
+                            <li>Incorporated responsive web design principles and various Javascript extensions to make website compatible
+                                over various devices and browsers
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cluepDashboard">
+                        <h1 class = "headings"># Full Stack </h1>
+                        <ul class="body">
+                            <li>Collaborated with software engineers, machine-learning engineers, and UX designers
+                                to develop internal dashboard
+                            </li>
+                            <li>Intricately used Github and Invision</li>
+                            <li>Built front end with React.js and back end with Node.js and SQL
+                            </li>
+                            <li>Set up ESLint environment for project</li>
+                        </ul>  
+                    </div>
+                    <div id="cluepAI">
+                        <h1 class = "headings"># Image Processing </h1>
+                        <ul class="body">
+                            <li>Pre-processed and classified images of objects and actions used to train 
+                                AI
+                            </li>
+                            <li>Used Open-CV, NumPy and Scikit on Python to filter and separate parts of images</li>
+                            <li>Researched AI algorithms</li>
+                        </ul>   
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id= "kumon"class = "mainDiv right">
+                <div id= "kumonHeading">
+                    <img src="images/kumon-logo.gif">
+                </div>
+                <div id="kumon-content-container">
+                    <div id="kumon-image"class="image"> </div>
+                    <ul id="kumon-content" class="body">
+                        <li>Taught primary school students advanced math including integration, series, and linear algebra</li>
+                        <li>Tracked the progress of up to 40 students per week</li>
+                        <li>Multitasked in a fast-paced environment, teaching up to 4 children at a time and marking papers</li>
+                    </ul>
+                </div>
+               
+            </div>
+
+        </div>
+
+        <div id="projects" class= "mainDiv below center">
+            <div id='projectsHeading' class="headings">
+                Projects and Activites
+            </div>
+            <div id="projectsIntroOuterContainer" class="column">
+                <div class = "row">
+                    <div id="pNasa" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">NASA Space Settlement Contest</h1>
+                    </div>
+                    <div id="pClothes" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Clothes-Folding Robot</h1>
+                    </div>
+                    <div id="pMusic" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">UW Robotics Team</h1>
+                    </div>
+                </div>
+                <div class = "row" >
+                    <div id="pBike" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Electric Bike - Generator</h1>
+                    </div>
+                    <div id="pArm" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Robotic Arm</h1>
+                    </div>
+                    <div id = "pRobotics" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">FRC Robotics</h1>
+                    </div>
+                </div>
+                <div class = "row" >
+                    <div id = "pHack" class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Handwriting Software</h1>
+                    </div>
+                    <div id ="pLine"class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Engineering Club</h1>
+                    </div>
+                    <!-- <div id = "pFill2"class="projectsIntroContainer">
+                        <div></div>
+                        <h1 class="body opacity0">Fill2</h1>
+                    </div> -->
+                </div>
+                <!-- -Nasa, Electric Bike, Line follower eng club, Tron days, Hackathon, Clothes-Folding Robot -->
+            </div>
+            <div id = "projNasa"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        NASA Space Settlement Contest
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class="videoContainer">
+                            <iframe class ="video" src="https://www.youtube.com/embed/qK8NcteE688" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+                            <p class="pCaption">More details about the project</p>
+                        </div>
+                        
+                        <a class = "image" id="projNasaImg0"target="_blank" href='https://docs.google.com/document/d/1cXlvJvAi23H9nrWYC6W0YgZPSjiPBSLDlXtZQ3tpjLo/edit?usp=sharing'>
+                            <p class="pCaption" >Our project</p>
+                        </a>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Designed a free-floating space settlement that could sustain life for over 20,000 people</li>
+                        <li>Outlined detailed plans for combating the challenges of living in space in a 138 page report</li>
+                        <li>Researched cutting edge technology to implement on space settlement, as well as posing innovative new ideas</li>
+                        <li><a class="toANasa">How it turned out...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projClothes"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        Clothes Folding and Sorting Robot
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class = "videoContainer">
+                            <iframe class="video"src="https://www.youtube.com/embed/P5dtiHSBwGo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p class="pCaption">Robot in action</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Programmed all robot functionality on EV3 brick using RobotC</li>
+                        <li>Machined all necessary parts using laser cutter, band-saw, drill press, etc.</li>
+                        <li>Worked with various sensors including color sensor, touch sensor, and ultrasonic sensor</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projMusic"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        University of Waterloo Robotics Team
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div id="projMusicImg0"class = "image">
+                            <p class="pCaption">Mars rover the team is currently working on</p>
+                        </div>
+                        <div id="projMusicImg1"class = "image">
+                            <p class="pCaption">My project for the first year design contest</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Currently working on a robot rover for the University Mars Rover Competition</li>
+                        <li>Use ROS (Robot Operating System) on Linux with C++ and Python to program high level software to make the robot autonomous</li>
+                        <li>Programming subtasks include making image recognition and depth perception software, programming simulations, and working with low-level microcontroller programming</li>
+                        <li>Built a music playing, line following robot for first year intro challenge - worked as programming lead, and built custom audio circuit</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projBike"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        Electric Bike and Generator
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class = "videoContainer">
+                            <iframe class="video"src="https://www.youtube.com/embed/QaSVSC7gQ5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p class="pCaption">An overview of the electric bike</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Designed a multidirectional system in which bike can generate electricity to charge the battery, and battery can be used to run bike</li>
+                        <li>Machined and manufactured all necessary parts (including gears for chain) from wood and metal/li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projArm"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        Robotic Arm
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class = "videoContainer">
+                                <iframe class="video"width="560" height="315" src="https://www.youtube.com/embed/odXXemgZPw0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p class="pCaption">Robotic arm picking up a bone and placing it on a platform</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Built a robotic arm to pick up plastic bones and precisely place them on certain targets like hooks and platforms</li>
+                        <li>Robotic arm had 3 degrees of freedom, and two main positions</li>
+                        <li>Worked with continuous motors, servo motors, and pnuematic pistons</li>
+                        <li class="toATronDays">To find out how we did in the competition...</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projRobotics"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        FRC Robotics - Team 4939
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class = "image" id="projRoboticsImg0">
+                            <p class="pCaption">Robot for First Stronghold Challenge 2016</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Head of pneumatic systems for 2 years, and one of the main leads for the design of the robot </li>
+                        <li>Robots designed had to compete against other robots, and work in teams to complete challenges, and play games</li>
+                        <li>Worked with Java and AutoDesk Software to program and design various robots </li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projHack"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        Handwriting Software at Cipher Local Hack Day
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div id="projHackImg0"class = "image">
+                            <p class="pCaption">Sample output from the program</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Built software that would train with the users handwriting and produce output in the users handwrititng based on what was typed in</li>
+                        <li>Attempted to input documents and process text as images</li>
+                        <li>Initial idea to build software that would take a document, find the math problems in the document, solve the equations, and output the answers in the users handwriting onto the document</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "projLine"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        CPSS Engineering Club - President and Founder
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class ="videoContainer">
+                            <iframe class="video"src="https://www.youtube.com/embed/VXdwsK64oK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p class="pCaption">Engineering Club Line Chaser</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Taught over 40 students how to code in Java in order to prepare them for the Canadian Computing Contest</li>
+                        <li>Prepared students for RobOlympics by introducing them to soldering and rapid prototyping with 3d printers and XY plotters</li>
+                        <li>Built line following robot racer using IR sensors, and 3d printed base to compete in RobOlympics </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id = "projFill2"class = "mainDiv below right proj">
+                <div class = "column projectsContentContainer">
+                    <div class="headings projectHeading">
+                        More FillerText
+                    </div>
+                    <div class="row projectMediaContainer">
+                        <div class = "image">
+                            <p class="pCaption">Our Project</p>
+                        </div>
+                    </div>
+                    <ul class="projectText body">
+                        <li>Filler text</li>
+                    </ul>
+                </div>
+            </div> -->
+            
+        </div>
+
+        <div id="skills" class= "mainDiv below center">
+            <div id ="skillsHeading" class="headings">Technical Skills</div>
+            <div id = "skillsRangeDisplayContainer" class="column">
+                <div id = "programmingLanguages" class="row">
+                    <div class = "headings skillSetHeading">Programming Languages/ Frameworks</div>
+                    <div class = "column">
+                        <div class="row" id="programmingRow1">
+                            <!-- <div class="skillContainer" id="">
+                                <div class="body skillHeading">Hello</div>
+                                <div class = "skillRangeFront"></div>
+                                <div class = "skillRangeBack"></div>
+                            </div> -->
+                        </div>
+                        <div class="row" id="programmingRow2">
+                        </div>
+                    </div>   
+                </div>
+                <div id = "skillsRow2" class="row">
+                    <div class = "headings skillSetHeading">Designing Tools</div>
+                    <div id = "designingTools" class="column">
+
+                    </div>
+                    <div class = "headings skillSetHeading">Mechanical Skills</div>
+                    <div id = "mechanicalSkills" class="column">
+                            
+                    </div>
+                    <div class = "headings skillSetHeading">Other Skills</div>
+                    <div id="otherSkills" class = "column">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="achievements" class= "mainDiv below center">
+            <div id = "achievementsHeading" class="headings">
+                Achievements
+            </div>
+            <div id="achievementsContent" class="column">
+                <div class="row" id="achievementsRow1">
+                    <div id = "achievementsNasa">
+                        <h1 class="achievementsRowHeading">2nd Place Internationally NASA Space Settlement Contest (Letter from PM)</h1>
+                        <div class = "achievementsPic" id="achievementsNasaPic"></div>
+                    </div>
+                    <div id = "achievements100">
+                        <h1 class="achievementsRowHeading">Top Mark Peel District School Board Class of 2017</h1>
+                        <div class = "achievementsPic" id="achievements100Pic"></div>
+                    </div>
+                </div>
+
+                <div class="row" id="achievementsRow2">
+                    <div id = "achievementsTronDays">
+                        <h1 class="achievementsRowHeading">1st Place UW Tron Days</h1>
+                        <div class = "achievementsPic" id="achievementsTronDaysPic"></div>
+                    </div>
+                    <div id = "achievementsOther">
+                        <h1 class="achievementsRowHeading">Other Awards</h1>
+                        <div class = "achievementsPic" id="achievementsOtherPic"></div>
+                    </div>
+                    <div id = "achievementsNews">
+                        <h1 class="achievementsRowHeading">Me in the News</h1>
+                        <div class = "achievementsPic" id="achievementsNewsPic"></div>
+                    </div>
+                </div>             
+                
+            </div>
+
+            <div id = "aNasa"class = "mainDiv right">
+                <h1 class="headings aHeadings"> 
+                    2nd Place Internationally <br>NASA Space Settlement Contest
+                </h1>
+                <div class = "aInfoContainer">
+                    <ul class="aInfo">
+                        <li>Competed with over 6000 students across the world</li>
+                        <li>Was sent letter of congratulations from Prime mininster Justin Trudeau</li>
+                        <li>Recieved fully sponsored trip to International Space Development Conference in St.Louis</li>
+                        <li>Featured at Space Camp Canada, Canadian Innovation Nation Conference, and Canadian Youth STEM Conference</li>
+                    </ul>
+                </div>
+                
+                <div id="aNasaImgContainer">
+                    <div class="row">
+                        <a id="aPmLetter" class="image" href="images/achievements/pm-letter.pdf" target="_blank">
+                            <p class="aCaption">Letter from Justin Trudeau</p>
+                        </a>
+                        <a id="aStLouis" class="image"href="images/achievements/st-louis.jpg" target="_blank" >
+                            <p class="aCaption">NASA team at St.Louis</p>
+                        </a>
+                        <a id="aCertificate" class="image" target="_blank"href ="images/achievements/transcendence-certificate.jpg">
+                            <p class="aCaption">Certificate of achievement</p>
+                        </a>
+                        <a id = "aConference" class="image" target="_blank">
+                            <p class="aCaption">Presenting at Space Camp Canada</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "a100"class = "mainDiv right">
+                <h1 class="headings aHeadings"> 
+                    Top Mark Peel District <br> School Board Class of 2017
+                </h1>
+                <div class = "aInfoContainer">
+                    <ul class="aInfo">
+                        <li>Finished with overall average of 100%</li>
+                        <li>One of 9 Top Scholars</li>
+                    </ul>
+                </div>
+                <div id="a100ImgContainer">
+                    <div class="row">
+                        <a id="aPdsb" class="image" 
+                            href="http://www.peelschools.org/media/newsreleases/Pages/Article.aspx?art-id=1963" target="_blank">
+                            <p class="aCaption">Announced in the PDSB newsletter</p>
+                        </a>
+                        <a id="aBramptonGuardian" class="image"
+                            href="https://www.bramptonguardian.com/news-story/7418483-central-peel-pals-graduate-with-flawless-grades-head-to-same-university/"target="_blank" >
+                            <p class="aCaption">Featured in the Brampton Guardian</p>
+                        </a>
+                        <a id="aTorontoStar" class="image"
+                            href ="https://www.thestar.com/news/gta/2017/07/19/toronto-public-schools-top-student-cites-variety-as-reason-behind-success.html" target="_blank">
+                            <p class="aCaption">Mentioned in the Toronto Star</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "aTronDays"class = "mainDiv right">
+                <h1 class="headings aHeadings"> 
+                    First Place University of Waterloo<br> Mechatronics Competition
+                </h1>
+                <div class = "aInfoContainer">
+                    <ul class="aInfo">
+                        <li>Competed against 250 peers in Mechatronics Engineering</li>
+                        <li>Came 1st in stream with the robot scoring 136/140 points</li>
+                    </ul>
+                </div>
+                <div id="aTronDaysImgContainer">
+                    <div class="row">
+                        <a id="aRobot" class="image" href="images/achievements/tron-days-robot.jpg" target="_blank">
+                            <p class="aCaption">Winning Robot</p>
+                        </a>
+                        <a id="aTronCertificate" class="image" href="images/achievements/tron-days-certificate.jpg"target="_blank" >
+                            <p class="aCaption">Certificate of Achievement</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id = "aOther"class = "mainDiv right">
+                <div class = "column">
+                    <div class="row">
+                        <a id="aMathletics" class="image" href="https://www.peobrampton.com/newsletters?download=24:brampton-chapter-spring-2015-newsletter" target="_blank">
+                            <p class="aCaption">First place Mathletics science and engineering competition</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a id="aMathCompetitions" class="image" href="images/achievements/math-comps.jpg" target="_blank">
+                            <p class="aCaption">School champion - various Waterloo math contests</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a id="aDeca" class="image" href="images/achievements/deca.jpg" target="_blank">
+                            <p class="aCaption">3rd place overall out 300 people - Peel Regional DECA</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                
+            <div id = "aNews"class = "mainDiv right">
+                <div class="headings aHeadings">
+                    Me in the News and Other Documents
+                </div>
+                <div class = "row">
+                    <a id="aCbc" class="image" href="http://www.cbc.ca/news/canada/toronto/brampton-students-nasa-prize-international-competition-1.4052581" target="_blank">
+                        <p class="aCaption">Featured on CBC radio and TV</p>
+                    </a>
+                    <div class = "column" id="aNewsImageContainer">
+                        <div class = "row" id="aNewsBigRow" >
+                            <!-- <a id="aNews1" class="image" href="#" target="_blank">
+                                <p class="aCaption">Featured on CBC radio and TV</p>
+                            </a> -->
+                            <a id="aNews2" class="image" href="images/achievements/csa-president-letter.pdf" target="_blank">
+                                <p class="aCaption">Letter from President of CSA</p>
+                            </a>
+                            <a id="aNews3" class="image" href="images/achievements/minister-letter.pdf" target="_blank">
+                                <p class="aCaption">Letter from Minister of Innovation and Science</p>
+                            </a>
+                        </div>
+                        <div class = "row">
+                            <a id="aNews4" class="image" href="https://www.bramptonguardian.com/news-story/7223843-nasa-contest-recognizes-peel-students-for-space-settlement-design/" target="_blank">
+                            </a>
+                            <a id="aNews5" class="image" href="http://www.metronews.ca/news/toronto/2017/04/03/brampton-students-win-big-with-nasa-for-plan-to-orbit-mars.html" target="_blank">
+                            </a>
+                            <a id="aNews6" class="image" href="https://www.insauga.com/four-mississauga-students-graduate-with-100-per-cent-average" target="_blank">
+                            </a>
+                        </div>
+                        <div class = "row">
+                            <a id="aNews7" class="image" href="http://peelregionreview.com/perfect-graduates/" target="_blank">
+                            </a>
+                            <a id="aNews8" class="image" href="http://ptcnetwork.ca/brampton-students-shined-at-2017-nasa-ames-space-settlement-contest/" target="_blank">
+                            </a>
+                            <a id="aNews9" class="image" href="http://www.brampton.ca/EN/Business/economic-development/Documents/Perspective-Transforming-Brampton.pdf" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="education" class="mainDiv below center">
+            <div id = "educationHeading"class="headings">Education</div>
+            <div class = "row">
+                <div class="image" id="waterlooImage">
+                </div>
+                <div id="educationWaterlooHeading">
+                    University of Waterloo - Candidate for BASc in Mechatronics Engineering
+                </div>
+                
+                <ul id="educationText" class="body column">
+                    <li>Class of 2022</li>
+                    <li>4.0 GPA</li>
+                    <li>Courses include:
+                        <ul>
+                            <li>Algorithms and Data Structures</li>
+                            <li>Linear Algebra</li>
+                            <li>Calculus 2</li>
+                            <li>Engineering Graphics and Design</li>
+                            <li>Circuits and Electromagnetism</li>
+                            <li>Statics</li>
+                            <li>Materials</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="contactMe" class = "mainDiv below center">
+            <div id="contactHeading" class = "headings">Contact Information</div>
+            <div id="contactMeContent"class="column">
+                <div class="body">Email: vishvam.mazumdar@gmail.com</div>
+                <div class="body">Phone Number: 647-708-2411</div>
+                <div class="body">Linkedin: <a target = "_blank"href="http://www.linkedin.com/vishvam-mazumdar">/vishvam-mazumdar</a></div>
+                <div class="body">Linkedin: <a target = "_blank"href="http://www.github.com/v7770x">/v7770x</a></div>
+            </div>
+        </div>
+        
+    </body>
+
+    <!-- scripts -->
+    
+
+</html>

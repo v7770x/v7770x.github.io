@@ -1,0 +1,70 @@
+#tracker
+{
+    position:fixed;
+    z-index:1;
+    top: 150px;
+    left:40px;
+    width:150px;
+    height:600px;
+    padding:0;
+    margin: 0;
+}
+
+#trackerCircle
+{
+    display: block;
+    position: absolute;
+    transform: translate(-12px,-12px);
+    transition: left .5s, top .5s;
+}
+
+.gear
+{
+    display:block;
+    position: absolute;
+    transition: width 0.5s, transform 0.5s;
+
+}
+.gear:hover
+{
+    cursor: pointer;
+}
+
+.gInactive
+{
+    width:50px;
+    height: 50px;
+}
+
+.gActive
+{
+    transform: translateX(-12px) translateY(-12px);
+    width:75px;
+    height: 75px;
+}
+
+@media screen and (min-width: 1590px) 
+{
+    #tracker
+    {
+       left: 100px;
+    }
+    
+}
+@media screen and (max-width:1150px)
+{
+    #tracker
+    {
+        left: 15px;
+    }
+}
+@media screen and (min-height:900px)
+{
+    #tracker
+    {
+        top:250px;
+    }
+
+}
+
+/*1920,1020 1600,900 1440,900 1366,768, 1200,800 1280,800 */

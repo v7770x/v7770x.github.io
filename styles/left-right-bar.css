@@ -1,0 +1,33 @@
+#leftRightBar i
+{
+    position:fixed;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    bottom: 30px;
+    
+}
+
+#leftRightBar i:hover
+{
+    cursor: pointer;
+}
+
+#leftArrow
+{
+    left: 180px;
+    text-shadow: -5px 0px black
+}
+#rightArrow
+{
+    right: 50px;
+    text-shadow: 5px 0px black
+}
+
+@media screen and (max-width: 1150px)
+{
+    #leftArrow 
+    {
+        left: 110px;
+    }
+}

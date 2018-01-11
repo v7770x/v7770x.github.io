@@ -1,0 +1,535 @@
+#achievements
+{
+    background-color: rgb(228, 228, 228);
+    /* background: linear-gradient(#0d19a3,#fc4445); */
+}
+
+#achievementsHeading
+{
+    position: absolute;
+    left: 0%;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size:70px;
+}
+
+#achievementsContent
+{
+    position: absolute;
+    width: 75%;
+    left: 13%;
+    top: 180px;
+    height: 70%;
+}
+
+#achievementsRow1
+{
+    height: 60%;
+    width:100%;
+}
+
+#achievementsRow2
+{
+    height: 30%;
+    width:100%;
+}
+
+#achievementsRow1 div, #achievementsRow2 div
+{
+    height:100%;
+    position: relative;
+}
+#achievementsRow1 div
+{
+    width:45%;
+}
+ #achievementsRow2 div
+ {
+     width:30%;
+ }
+
+#achievementsRow1 div h1, #achievementsRow2 div h1
+{
+    font-size: 25px;
+    color: black;
+    width: 100%;
+    height:25%;
+    text-align: center;
+    margin: 0;
+    font-family: "Bebas";
+}
+#achievementsRow1 div div, #achievementsRow2 div div
+{
+    width: 100%;
+    height: 75%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+#achievementsRow1 div:hover, #achievementsRow2 div:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#achievementsRow1 div p, #achievementsRow2 div p
+{
+    width:100%;
+    text-align: center;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+}
+
+#achievementsNasaPic
+{
+    background: url("../images/achievements/nasa-certificate.jpeg");
+}
+
+#achievementsNewsPic
+{
+    background: url("../images/achievements/cbc-radio.jpg");
+}
+
+#achievements100Pic
+{
+    background: url("../images/achievements/100-percent.jpg");
+}
+
+#achievementsTronDaysPic
+{
+    background: url("../images/achievements/tron-days-certificate.jpg");
+}
+
+#achievementsOtherPic
+{
+    background: url("../images/achievements/deca.jpg");
+}
+
+.aHeadings
+{
+    position: absolute;
+    width:80%;
+    left:15%;
+    margin:auto;
+    margin-top:0;
+    text-align: center;
+    font-size: 40px;
+    color:black;
+}
+
+/* nasa */
+#aNasa
+{
+    background-color: rgb(228, 228, 228);
+}
+#aNasa .aHeadings
+{
+    top: 80px;
+}
+
+#aNasa .aInfoContainer
+{
+    position: absolute;
+    top:80%;
+    width:80%;
+    left:15%;
+}
+.aInfo
+{
+    color:black;
+    font-size: 15px;
+    font-family: "Oxygen", sans-serif;
+    margin:auto;
+    text-align: justify;
+    margin-top: 10px;
+}
+#aNasa .aInfoContainer .aInfo
+{
+    width:700px;
+}
+#aNasaImgContainer 
+{
+    position: absolute;
+    top: 200px;
+    width:80%;
+    left: 15%;
+    height: 60%;
+}
+#aNasaImgContainer div
+{
+    height:100%;
+}
+#aNasaImgContainer div a
+{
+    display: block;
+    height: 80%;
+    width: 20%;
+    position: relative;
+}
+.aCaption
+{
+    position: absolute;
+    top:100%;
+    /* height:25%; */
+    width: 100%;
+    text-align: center;
+}
+
+#aPmLetter
+{
+    background-image: url("../images/achievements/pm-letter.png");
+}
+
+#aStLouis
+{
+    background-image: url("../images/achievements/st-louis.jpg");
+}
+
+#aCertificate
+{
+    background-image: url("../images/achievements/transcendence-certificate.jpg");
+}
+#aConference
+{
+    background-image: url("../images/achievements/space-camp.jpg");
+}
+
+
+/* 100 */
+#a100
+{
+    background-color: rgb(228, 228, 228);
+}
+
+#aPdsb
+{
+    background-image: url("../images/achievements/pdsb.jpg");
+    transform: translateY(40px);
+}
+
+#aBramptonGuardian
+{
+    background-image: url("../images/achievements/brampton-guardian.jpg");
+    transform: translateY(130px);
+}
+#aTorontoStar
+{
+    background-image: url("../images/achievements/toronto-star.jpg");
+    transform: translateY(40px);
+}
+#a100 .aHeadings
+{
+    top: 70px;
+    left: 15%;
+}
+#a100 .aInfoContainer
+{
+    position: absolute;
+    top: 22%;
+    width:80%;
+    left: 15%;
+
+}
+#a100 .aInfoContainer .aInfo
+{
+    width: 300px;
+}
+
+#a100ImgContainer 
+{
+    position: absolute;
+    top:20%;
+    width:80%;
+    height:60%;
+    left:15%;
+}
+#a100ImgContainer div
+{
+    height:100%;
+}
+#a100ImgContainer div a
+{
+    display: block;
+    height: 80%;
+    width: 20%;
+    position: relative;
+}
+
+/* tron days */
+
+#aTronDays
+{
+    background-color: rgb(228, 228, 228);
+}
+
+#aRobot
+{
+    background-image: url("../images/achievements/tron-days-robot.jpg");
+}
+
+#aTronCertificate
+{
+    background-image: url("../images/achievements/tron-days-certificate.jpg");
+}
+
+#aTronDays .aHeadings
+{
+    top: 70px;
+    left: 15%;
+}
+#aTronDays .aInfoContainer
+{
+    position: absolute;
+    top: 160px;
+    width:80%;
+    left: 15%;
+}
+#aTronDays .aInfoContainer .aInfo
+{
+    width: 400px;
+}
+
+#aTronDaysImgContainer 
+{
+    position: absolute;
+    top:230px;
+    width:80%;
+    height:60%;
+    left:15%;
+    
+}
+#aTronDaysImgContainer div
+{
+    height:100%;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+#aTronDaysImgContainer div a
+{
+    display: block;
+    height: 80%;
+    width: 40%;
+    position: relative;
+}
+
+/*other*/
+
+#aOther 
+{
+    background-color: rgb(228, 228, 228);    
+}
+
+#aOther .column 
+{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 120px;
+    height: 60%;
+}
+
+#aOther .column .row
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#aOther .column .row a
+{
+    display: block;
+    height: 120%;
+    width: 33%;
+    position: relative;
+}
+
+#aMathletics
+{
+    margin-left: 15%;
+    background-image: url("../images/achievements/mathletics.jpg");
+}
+#aMathCompetitions
+{
+    margin-right: 6%;
+    background-image: url("../images/achievements/math-comps.jpg");
+}
+#aDeca
+{
+    margin-left: 22%;
+    background-image: url("../images/achievements/deca.jpg");
+}
+
+/*News*/
+
+#aNews
+{
+    background-color: rgb(228, 228, 228);        
+}
+
+#aNews .aHeadings
+{
+    top:70px;
+    left: 15%;
+}
+
+#aNews .row
+{
+    position: absolute;
+    top:150px;
+    left:15%;
+    width:70%;
+    height: 60%;
+    justify-content: space-around;
+}
+
+#aCbc
+{
+    height: 90%;
+    width:30%;
+    position: relative;
+}
+
+#aNewsImageContainer 
+{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+#aNewsImageContainer .row
+{
+    height: 20%;
+    width:100%;
+    position: relative;
+    left: 0;
+    top:0;
+}
+#aNewsImageContainer #aNewsBigRow
+{
+    height:40%;
+}
+#aNewsImageContainer #aNewsBigRow .image
+{
+    height:80%;
+}
+
+
+#aNewsImageContainer .row .image
+{
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-size: 100%;
+}
+#aNewsImageContainer .row .image p
+{
+    padding:10px;
+    box-sizing: border-box;
+    margin:0;
+
+}
+
+#aCbc
+{
+    background-image: url("../images/achievements/cbc-radio-me.jpg");
+}
+#aNews2
+{
+    background-image: url("../images/achievements/csa-president-letter.jpg");
+}
+#aNews3
+{
+    background-image: url("../images/achievements/minister-letter.jpg")
+}
+
+#aNews4
+{
+    background-image: url("../images/achievements/brampton-guardian-logo.png")
+}
+#aNews5
+{
+    background-image: url("../images/achievements/metro-news-logo.png")
+}
+#aNews6
+{
+    background-image: url("../images/achievements/insauga-logo.png")
+}
+#aNews7
+{
+    background-image: url("../images/achievements/ptc-logo.png")
+}
+#aNews8
+{
+    background-image: url("../images/achievements/peel-review-logo.png")
+}
+#aNews9
+{
+    background-image: url("../images/achievements/globe-and-mail-logo.png")
+}
+
+@media screen and (min-width: 1600px) 
+{
+    #achievementsRow1 div h1, #achievementsRow2 div h1
+    {
+        font-size:40px;
+    }
+    .aInfo
+    {
+        font-size: 20px;
+    }
+    .aCaption
+    {
+        font-size:22px;
+    }
+
+
+    #a100ImgContainer .row
+    {
+
+    }
+}
+@media screen and (min-height:900px)
+{
+    #aNasaImgContainer
+    {
+        top:230px;
+    }
+    #aTronDaysImgContainer
+    {
+        top: 320px;
+    }
+    #aTronDays .aInfoContainer
+    {
+        top: 180px;
+    }
+    #aNews .row
+    {
+        top: 200px;
+    }
+    #aNewsImageContainer .row
+    {
+        top:0;
+    }
+
+}
+
+@media screen and (max-width: 1202px)
+{
+    #aNewsImageContainer #aNews3 p
+    {
+        top: 12%;
+    }
+}
+/* @media screen and (min-width: 1700px) and (min-height: 900px) */
+
+
+
+
+

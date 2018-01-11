@@ -1,0 +1,119 @@
+body, html,head
+{
+    padding:0;
+    margin: 0;
+    width:100%;
+    position:absolute;
+    height:100%;
+}
+body
+{
+    background-color: green;
+}
+
+.headings
+{
+    color: #faed26;
+    font-family: Bebas;
+    font-weight: bold;
+}
+.body
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px;
+    color:#def2f1;
+}
+a
+{
+    text-decoration: none;
+}
+a:link
+{
+    color:black;
+}
+a:visited
+{
+    color: black;
+}
+a:active, i:active
+{
+    color: yellow
+}
+
+.active
+{
+    top:0;
+}
+.above
+{
+    top:-100%;
+}
+.below
+{
+    top:100%;
+
+}
+.left
+{
+    left:-100%;
+}
+.center
+{
+    left:0;
+}
+.right
+{
+    left:100%;
+
+}
+
+
+.mainDiv
+{
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index:0;
+    transition: top 0.5s, left 0.75s;
+}
+.displayBlock
+{
+    display:block;
+}
+.displayNone
+{
+    display:none;
+}
+.opacity0
+{
+    opacity:0;
+}
+.opacity100
+{
+    opacity: 1;
+}
+
+.clickable
+{
+    cursor:pointer;
+}
+.column
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.image
+{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}

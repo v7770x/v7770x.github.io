@@ -1,0 +1,271 @@
+#workExperience
+{
+    background-color: #0d19a3;
+    /* background: linear-gradient(#222629,#0d19a3); */
+}
+
+
+#workExperienceHeadingContainer
+{
+    position:absolute;
+    width:100%;
+    margin:0;
+}
+
+.workExpUp
+{
+    top:100px;
+}
+.workExpDown
+{
+    top:250px;
+}
+.workExpBig
+{
+    font-size: 130px;
+}
+.workExpSmall
+{
+    font-size: 70px;
+}
+
+#workExperienceHeading
+{
+    width:900px;
+    text-align: center;
+    margin:auto;
+    margin-top:0;
+    color: white;
+}
+
+#workExpIntrosContainer
+{
+    position: absolute;
+    width:100%;
+    top:230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.transitionA
+{
+    transition: font-size 2s .5s, top 2s .5s;
+}
+
+.transitionB
+{
+    transition: opacity 2s 2.5s;
+}
+
+.transitionC
+{
+    transition: opacity 2s 3.5s;
+}
+
+#cluepIntro, #kumonIntro
+{
+    width: 20%;
+    padding: 0 15px;
+}
+
+#cluepIntro:hover, #kumonIntro:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#cluepIntro div, #kumonIntro div
+{
+    font-size: 25px;
+    text-align: center;
+    margin-top:20px;
+}
+
+#cluepIntro img, #kumonIntro img
+{
+    display:block;
+    width:60%;
+    margin:auto;
+}
+
+
+#kumonIntro img
+{
+    margin-top: 30px;
+}
+
+/* cluep */
+
+#cluep
+{
+    background-color:#0d19a3;
+    /* background: linear-gradient(#222629,#0d19a3); */
+}
+
+#cluepHeading
+{
+    position:absolute;
+    top:70px;
+    left:15%;
+    width:80%;
+}
+#cluepHeading img
+{
+    display: block;
+    margin:auto;
+    margin-top:0;
+    width:200px;
+}
+#cluepRolesContainer
+{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top:165px;
+    left: 15%;
+    width: 80%;
+    height: 65%;
+    
+}
+#cluepRolesContainer div
+{
+    width:25%;
+    padding:10px;
+}
+
+#cluepRolesContainer ul
+{
+    font-size: 17px;
+    color:white;
+    margin-right:20px;
+}
+
+#cluepRolesContainer ul li
+{
+    margin-bottom: 15px;
+}
+
+#cluepRolesContainer h1
+{
+    width:100%;
+    text-align: center;
+    color:white;
+}
+
+#cluepWebDesign
+{
+    background-color: #ff652f;
+}
+
+#cluepDashboard
+{
+    background-color:#14a7a6;
+    transform: translateY(30px);
+}
+
+#cluepAI
+{
+    background-color:#ebd008;
+}
+
+/* kumon */
+
+#kumon
+{
+    background-color:#0d19a3;
+    /* background: linear-gradient(#222629,#0d19a3); */
+}
+
+#kumonHeading
+{
+    position: absolute;
+    top:100px;
+    left:15%;
+    width:70%;
+}
+
+#kumonHeading img
+{
+    display: block;
+    margin:auto;
+    margin-top:0;
+    width:230px;
+}
+#kumon-content-container
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:200px;
+    left:15%;
+    height:63%;
+    width:70%;
+    justify-content: space-around;
+}
+#kumon-image
+{
+    background-image: url('../images/kumon-classrooms.jpg');
+    width: 30%;
+    height: 100%;
+}
+#kumon-content
+{
+    margin: 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+#yaarLink:link
+{
+    color:white;
+}
+
+#yaarLink:visited
+{
+    color:white;
+}
+
+@media screen and (min-height: 900px)
+{
+    #workExpIntrosContainer 
+    {
+        top: 330px;
+    }
+    .workExpUp
+    {
+        top: 200px;
+    }
+    #cluepDashboard
+    {
+        transform: translateY(80px);
+    }
+}
+@media screen and (min-width: 1600px) and (min-height: 900px)
+{
+    #cluepRolesContainer ul
+    {
+        font-size:23px;
+    }
+    #cluepRolesContainer h1
+    {
+        font-size: 40px;
+    }
+    #kumon-content
+    {
+        font-size: 33px;
+    }
+
+}
+
+@media screen and (max-width:1150px)
+{
+    #cluepRolesContainer ul
+    {
+        font-size:15px;
+    }
+}
