@@ -1,5 +1,5 @@
 
-var projectsList = ['Nasa', 'Clothes', 'Music', 'Bike', 'Arm', 'Robotics','Hack','Line'];
+var projectsList = ['Nasa', 'Clothes', 'Music', 'Bike', 'Arm', 'Robotics','Hack','Line', 'Mars'];
 $(document).ready(function(ready)
 {
     for(let i=0; i<projectsList.length; i++)

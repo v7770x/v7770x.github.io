@@ -9,8 +9,8 @@ var transitionsComplete = [];
 for(let x = 0; x<scrollList.length;x++)
     transitionsComplete.push(false);
 
-var innerScrollList = [["intro", 'introExpand'],["workExperience","cluep", "kumon"],
-        ['projects','projNasa','projClothes','projMusic','projBike', 'projArm', 'projRobotics', 'projHack', 'projLine'],
+var innerScrollList = [["intro", 'introExpand'],["workExperience", "triumf" , "spinLab", "cluep", "kumon"],
+        ['projects','projNasa','projClothes','projMusic','projBike', 'projArm', 'projRobotics', 'projHack', 'projLine','projMars'],
         ["skills"],
         ["achievements","aNasa","a100","aTronDays","aOther","aNews"],['education'],['contactMe']];
 var innerScrollIdList = innerScrollList.map(function(x)
@@ -89,8 +89,10 @@ $(document).ready(function(e)
         });
         $("#g6 img").addClass('displayNone');
 
-        $("#kumonIntro").click((e)=>jumpLeftRight(1, 2));
-        $("#cluepIntro").click((e)=>jumpLeftRight(1, 1));
+        $("#triumfIntro").click((e)=>jumpLeftRight(1, 1));
+        $("#spinLabIntro").click((e)=>jumpLeftRight(1, 2));
+        $("#kumonIntro").click((e)=>jumpLeftRight(1, 4));
+        $("#cluepIntro").click((e)=>jumpLeftRight(1, 3));
         $("#rightArrow").click((e)=>{scrollRight(-1); updateLeftRightBar()});
         $("#leftArrow").click((e)=>{scrollLeft(-1);updateLeftRightBar();});
         $("#rightArrow").dblclick((e)=>{let curr = getPrevCurrNext()[1];jumpLeftRight(curr, innerScrollIdList[curr].length-1)});
@@ -299,6 +301,8 @@ function postScroll()
     {
         $('#workExperienceHeadingContainer').addClass('workExpUp transitionA').removeClass('workExpDown');
         $('#workExperienceHeading').addClass('workExpSmall transitionA').removeClass('workExpBig');
+        $('#triumfIntro').addClass('opacity1 transitionB').removeClass('opacity0');
+        $('#spinLabIntro').addClass('opacity1 transitionC').removeClass('opacity0'); 
         $('#cluepIntro').addClass('opacity1 transitionB').removeClass('opacity0');
         $('#kumonIntro').addClass('opacity1 transitionC').removeClass('opacity0'); 
         transitionsComplete[1] = true;

@@ -110,6 +110,10 @@
 {
     background: url('../images/projects/robotics.jpg');
 }
+#pMars div
+{
+    background: url('../images/projects/mars-colony-airlock.jpg');
+}
 
 /*generic project*/
 
@@ -212,5 +216,13 @@
 #projRoboticsImg0 
 {
     background-image: url("../images/projects/proj-robotics-img-0.jpg");
+}
+#projMarsInitialDesign
+{
+    background-image: url("../images/projects/proj-mars-initial-design.jpg");
+}
+#projMarsTeam
+{
+    background-image: url("../images/projects/proj-mars-team.jpg");
 }
 

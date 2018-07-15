@@ -41,12 +41,38 @@
 #workExpIntrosContainer
 {
     position: absolute;
-    width:100%;
+    width:80%;
     top:230px;
+    left: 15%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+#workExpIntrosContainer .workContainer
+{
+    width: 20%;
+    padding: 0 15px;
+}
+
+#workExpIntrosContainer .workContainer div
+{
+    font-size: 20px;
+    text-align: center;
+    margin-top:20px;
+}
+
+#workExpIntrosContainer .workContainer:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#workExpIntrosContainer div img{
+    display:block;
+    width:75%;
+    margin:auto;
+}
+
 
 .transitionA
 {
@@ -95,6 +121,86 @@
     margin-top: 30px;
 }
 
+.workExpDiv{
+    background-color:#0d19a3;
+}
+
+.workExpDiv .heading{
+    position:absolute;
+    top:70px;
+    left:15%;
+    width:80%;
+}
+.workExpDiv .heading img{
+    display: block;
+    margin:auto;
+    margin-top:0;
+    width:200px;
+}
+.workExpDiv .content-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:200px;
+    left:15%;
+    height:63%;
+    width:70%;
+    justify-content: space-around;
+}
+
+/* .workExpDiv .content-container div{
+    width:25%;
+    padding:10px;
+} */
+
+.flex{
+    display: flex;
+    
+    justify-content: space-around;
+
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.content-container .image
+{
+    /* background-image: url('../images/kumon-classrooms.jpg'); */
+    width: 30%;
+    height: 100%;
+}
+
+.content-container .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.content-container .image-container .image{
+    width: 100%;
+    height: 40%;
+}
+
+
+#triumf-image{
+    background-image: url('../images/triumf-path-planner.png');
+}
+#spin-lab-image1{
+    background-image: url('../images/spin-lab-rib-robot.jpg');
+}
+#spin-lab-image2{
+    background-image: url('../images/spin-lab-breath-robot.jpg');
+}
+.content-container .body
+{
+    margin: 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
 /* cluep */
 
 #cluep
@@ -115,7 +221,7 @@
     display: block;
     margin:auto;
     margin-top:0;
-    width:200px;
+    width:100px;
 }
 #cluepRolesContainer
 {
